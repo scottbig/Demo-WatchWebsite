@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<title>WoW Tokei</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/header.css" type="text/css">
+	<link rel="stylesheet" href="css/header_login_bag.css" type="text/css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/popup.css">
+	<link rel="stylesheet" href="css/signin_form.css">
+    <link rel="stylesheet" href="css/index_slider.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="shortcut icon" href="icon.ico">  
+
+<style>
+	.block_bg{
+		background-color:#fff;
+		position:fixed;
+		width: 100%;
+		height:100%;
+		top:0;
+		margin:0;
+		padding:0;
+		z-index:999;
+	}
+
+</style>
+
+</head>
+<body>
+	<div class="block_bg"></div>
+
+	<!--選單列開始-->
+	<div class="msg-boxTEK081">  <!--TEK-081-->
+		<div>
+			<img src="images01/V-02.png">
+			<span></span>
+		</div>
+		<div class="header">
+		<div class="nav-wrap">
+		<a href=""><div class="logo"></div></a>
+		<ul class="group" id="example-one">
+			<li><a href="index02.html"><span class="noshow">HOME</span><span class="show">首&nbsp;&nbsp;頁</span></a></li>
+			<li><a href="about.html"><span class="noshow">ABOUT</span><span class="show">關&nbsp;&nbsp;於</span></a></li>
+			<li><li><a href="product_list.html" class="menu_space1"><span class="noshow">COLLECTION</span><span class="show">商&nbsp;&nbsp;品</span></a></li>
+			<li><a href="gallery.html"><span class="noshow">GALLERY</span><span class="show">錶&nbsp;&nbsp;廊</span></a></li>
+			<li><li><a href="contact01.html"><span class="noshow">CONTACT</span><span class="show">聯&nbsp;絡&nbsp;我</span></a></li>
+		</ul>
+
+		<!-- 會員登入log in 開始 -->
+
+		<script>var ifLogin;</script>
+			<!-- 登入前 -->	
+				<script>ifLogin = false;</script>
+				<label class="signin_btn" for="singinbox-1"><div class="login"><span class="login-en">Log in</span><span class="login-ch">登入</span></div></label>
+			<!-- 會員登入log in 結束 -->
+<!-- 購物車 開始 -->
+
+		<div class="bag">
+			<a href="javascript">
+				<span class="bag-en">MY BAG</span>
+				<span class="bag-ch">購物清單</span>
+			</a>
+		</div>
+	</div>
+		
+		<div class="bagContent">
+			<div class="bagProducts" id="scrollbar">
+		<table>
+				<tbody>
+						<tr>
+							<td class="no-product">尚未選購任何商品</td>
+						</tr>
+				</tbody>
+		</table>
+	</div>
+
+	<div class="pCount">小計 : 共<span id="total_qn">0</span>件, NT$ <span id="totalInt">0</span></div>
+	</div>
+								<div class="bagCount">0</div>
+	<div class="bagCount bagCount2 forAni"></div>
+    <div class="bagCount bagCount2 forAni"></div>
+
+<!-- 購物車 結束 -->
+</div>
+
+<!-- 選單列結束 -->
+
+<!-- 首頁內容 -->
+
+<div class="container">
+	
+<!-- 形象圖開始 -->
+
+<div class="carousel cycle-slideshow" 
+	data-cycle-fx="fadeout" 
+	data-cycle-timeout="4000" 
+	data-cycle-pause-on-hover="false">
+
+	<img src="img/img_top01.jpg" >
+	<img src="img/img_top02.jpg" >
+	<img src="img/img_top03.jpg" >
+	<img src="img/img_top04.jpg" >
+	
+</div>
+
+<!-- 形象圖結束 -->
+
+<div class="bigTitle">NEWS</div>
+<div class="wrap">
+	<div class="slider">
+		<div class="frame_container">
+			<section class="color-10">
+				<ul class="sliderPic">
+					<li><img src="images01/banner1.jpg" data-lg="images/bbig1.jpg" alt=""></li>
+					<li><img src="images01/banner2.jpg" data-lg="images/bbig2.jpg" alt=""></li>
+					<li><img src="images01/banner3.jpg" data-lg="images/bbig3.jpg" alt=""></li>
+					<li><img src="images01/banner4.jpg" data-lg="images/bbig4.jpg" alt=""></li>
+				</ul>
+				<nav class="nav-fillslide">
+					<a class="prev" href="#">
+						<span class="icon-wrap">
+							<svg class="icon" width="24" height="24" viewbox="0 0 64 64">
+							<img src="images01/arrow.png" height="90" width="400" alt="" class="arrowLeft">
+						</svg></span>
+						<div>
+							<img src="images01/banner2.jpg" height="497" width="1260" alt="Previous thumb"/>
+						</div>
+					</a>
+					<a class="next" href="#">
+						<span class="icon-wrap">
+							<svg class="icon" width="24" height="24" viewbox="0 0 64 64"></svg>
+							<img src="images01/arrow.png" height="90" width="400" alt="" class="arrowRight">
+						</span>
+						<div>
+							<img src="images01/banner2.jpg" height="497" width="1260" alt="Next thumb"/>
+						</div>
+					</a>
+					</nav>
+				</section>
+			</div><!-- /container -->
+			<ul class="controller"></ul>
+		</div>
+	
+	<div class="bigTitle">COLLECTION</div>
+	<div class="wrap">
+		<div class="mainproduct">
+			<a href="javascript" class="cate">
+				<img src="images01/cate1.jpg" data-op="">
+				<div class="title">Men watch<p class="tch">男錶</p></div>
+			</a>
+			<a href="javascript:" class="cate">
+				<img src="images01/cate2.jpg" alt="">
+				<div class="title">Men watch<p class="tch">男錶</p></div>
+			</a>
+			<a href="javascript:" class="cate">
+				<img src="images01/cate3.jpg" alt="">
+				<div class="title">Woman watch<p class="tch">女錶</p></div>
+			</a>
+			<a href="javascript:" class="cate">
+				<img src="images01/cate4.jpg" alt="">
+				<div class="title">Woman watch<p class="tch">女錶</p></div>
+			</a>
+
+	</div>
+	<!-- footer開始 -->
+	<div class="aboveFooter"></div>
+	<div class="footer">
+		<div class="panel">
+		<ul class="tab">
+			<li><span class="english">SHOPPING INFORMATION</span><span class="chinese">購物指南<span></li>
+			<li><span class="english">REPLACEMENT</span><span class="chinese">商品更換</span></li>
+			<li><span class="english">USER TERMS</span><span class="chinese">使用條款</span></li>
+			<li><span class="english">PRIVACY POLICY</span><span class="chinese">隱私權政策</span></li>
+		</ul>
+		<div class="tabContent">
+			<div class="content1" id="style-3">
+				<ul>
+					<li class="num">購物流程：選購商品 >>  結帳付款 >>  完成訂單。</li>
+					<li class="num">結賬付款：選擇「付款方式」與「寄送地點方式」</li>
+						<ul>
+							<li class="round">信用卡／線上刷卡及時付款</li>
+							<li class="round">超商付款／於全台灣四大超商列印繳款單付款</li>
+						</ul>
+					<li>
+					<li class="num">完成訂單：當您按下「完成結帳」後，您將收到訂單完成的mail，請再依付款方式進行付款。</li>
+					</li>
+					<li class="num">注意事項：
+						<ul>
+							<li class="round">通常在5到10個工作日會發貨（除週六，週日和節假日）。<br>發貨完成後，我們將在“發出郵件完成”告訴你你的單號。並歡迎持續關注我們的產品。</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="content2" id="style-3">
+
+				<ul>
+					<li class="round2">退貨規定：<br>Woo Tokei提供七日鑑賞期之退貨服務，從收件日算起，所有商品皆有七日鑑賞期（鑑賞期非試用期），於鑑賞期內僅限乙次免運費退貨的服務。</li>
+					<li class="round2">換貨規定：<br>主觀認定情況，包含：尺寸規格（購買前請詳閱頁面尺寸）、螢幕之色差色偏等，以上商品主觀認定之差異，Woo Tokei恕不提供換貨服務。<br>對於商品瑕疵情況，請email通知客服以利辦理瑕疵認定並換貨。為維護網站服務品質，只提供乙次換貨服務。</li>
+					<li class="round2">退換貨流程：<br>詢問告知客服需退貨並提供瑕疵商品照片，客服將與您溝通了解並進行退貨。</li>
+					<li class="round2">注意事項：<br>所退回的商品必須保持商品發票、本體、附件、原廠內外包裝、防塵套、贈品及所有隨附文件資料的完整性，切勿缺漏任何配件或損毀原廠外盒。注意！只有在商品在未剪標、未使用的情形下才能退貨。</li>
+				</ul>
+			</div>
+
+			<div class="content3" id="style-3"">
+				<ul>
+					<li class="round2">保固期：購買之日起兩年。保固範圍：手錶(機芯、錶蓋)製作瑕疵</li>
+					<li class="round2">個人消息：當您在Woo Tokei購物時，我們會保存一些資料。您可以在官網上更改或刪除您的資料。</li>
+					<li class="round2">產品：Woo Tokei有權在不通知顧客的情況下調整售價、增加额外费用、更改产品图片和优惠等信息。</li>
+					<li class="round2">修訂：Woo Tokei不時修訂本使用條款。您每次向我們訂購商品時，當次有效的一般條件將適用於您和<br> Woo Tokei 之間的合约。因此，您應定期瀏覽本網站，查看您的當前條款。</li>
+				</ul>
+			</div>
+			<div class="content4" id="style-3">
+				<h4>隱私權保護</h4>
+				<p class="pp">親愛的會員您好：
+				非常歡迎您光臨 Woo Tokei，為了讓您能夠安心的使用本網站的各項服務與資訊，特此向您說明本網站的隱私權保護政策，以保障您的權益，請您詳閱下列內容：</p>
+					<ul>
+						<li class="num">使用者隱私權保護聲明<br>
+						Woo Tokei 極為重視個人資料之安全與隱私，依中華民國「電腦處理個人資料保護法」及本隱私權保護聲明，在未獲得您許可之情況下，我們不會將您的姓名、住址、電子郵件信箱或任何其他個人資料轉交給第三方，但也提醒您；請勿在網路上公開透露您的個人資料，因該資料有可能會被他人蒐集和使用，特別是在網路上公開的發言場合。</li> 
+						<li class="num">個人資料蒐集及使用<br> 為了保障各位客戶權益，第一次光臨 Woo Tokei 網站消費的顧客，只要確認完成交易後，即會自動升級為會員。註冊過程中您可以為自己設定一組帳號及密碼，經由該帳號，您可依照網站說明使用相關會員服務。請妥善保管您的會員帳號及密碼，不要將上述資料提供給任何人，在使用完畢後，請登出您的帳號。如果您與他人共用一台電腦或使用公共電腦，請記得關閉您的瀏覽器，以防止他人看到上述資料或取得進入您帳號的方法。</li> 
+						<li class="num">私權保護政策之修訂<br> 
+						Woo Tokei 保留更改本聲明各項內容之權利，修正後的條款將刊登於網站上，不另外對會員進行個別通知。若您對本隱私權保護政策有任何問題，請直接與本公司聯絡。</li> 
+					</ul> 
+					<h4>免責聲明</h4>
+					<p class="pp">親愛的會員您好： 非常歡迎您光臨 Woo Tokei，為了讓您能夠安心的使用本網站的各項服務與資訊，特此向您說明本網站的免責聲明，以保障您的權益，請您詳閱下列內容：</p>
+					<ul> 
+						<li class="num">您使用 Woo Tokei 購物服務之風險會您個人承擔，用戶同意使用 Woo Tokei網站各項服務系基於用戶的個人意願，並同意自負任何風險，包括因為自 Woo Tokei 網站下載資料或圖片，或自 Woo Tokei 網站服務中獲得之資料導致發生任何資源流失等結果。</li> 
+						<li class="num">Woo Tokei 網站就各項服務，不負任何明示或默示之擔保責任。「本網站」不保證各項服務之穩定、安全、無誤、及不中斷用戶明示承擔使用本服務之所有風險及可能發生之任何損害。</li> 
+						<li class="num">用戶在 Woo Tokei 網站填寫之物件資訊、個人資料、上傳圖片等行為，純屬用戶個人行為，「本網站」對其內容之真實性或完整性不負有任何責任。</li> 
+						<li class="num">任何由於電腦病毒侵入或發作、因政府管制而造成的暫時性關閉等影響網路正常經營之不可抗力而造成的資料毀損、丟失、被盜用或被竄改等與 Woo Tokei 網站無關。</li> 
+						<li class="num">Woo Tokei可隨時停止或變更網頁資料及有關條款而毋須事前通知用戶。</li> 
+					</ul> 
+					<h4>網站使用條款</h4> 
+					<p class="pp">親愛的會員您好： 非常歡迎您光臨 Woo Tokei 網站，為了讓您能夠安心的使用本網站的各項服務與資訊，特此向您說明本網站的網站使用條款，以保障您的權益，請您詳閱下列內容：</p>
+					<ul> 
+						<li class="num">使用條件<br>
+						當您進入並使用 Woo Tokei網站時，即視同您已同意遵守本使用條款的所有規定，以及本網站公佈的附加條款。若您不同意上述使用條件，請勿使用本網站。而您若不同意任何針對特定內容，或特定業務所訂定的附加條件，請勿使用含有這類內容或業務部分網頁，亦請勿使用這類內容，或進行這類交易。Woo Tokei可在不事先通知的情況下，隨時修正本使用條款，修正條款於本網站上張貼時隨即生效。故請您定期查詢公佈在本網站上的最新使用條款，確保您知悉本網站之最新使用規定。Woo Tokei 亦保留得自行決定禁止網站的使用，或限制進出網站的權利。</li> 
+						<li class="num">義務與承諾<br> 
+						您承諾絕不為任何非法目的或以任何非法方式使用本網站，並承諾遵守中華民國相關法規及一切使用網際網路之國際慣例。您若係中華民國以外之使用者，並同意遵守所屬國家或地域之法令。同意遵守使用本網站的限制，包括但不限於：
+							<ul> 
+								<li class="round">不得隱瞞通過本網站傳送的資訊來源；禁止向網站上載虛假或誤導性的資訊；禁止張貼或傳播任何不實廣告、宣傳資料或其他形式的誘騙性廣告。</li> 
+								<li class="round">禁止傳輸任何會侵犯他人權利的資料。</li> 
+								<li class="round">禁止向本網站輸入或上載任何含有病毒、欺騙程式、惡意程式、定時炸彈等病毒的資訊，或其他意圖損害、干擾、攔截或侵佔電腦系統、本網站或任何損害他人知識產權的電腦程式途徑。</li> 
+								<li class="round">禁止干擾或中斷本網站提供之各項服務或連接至此服務之伺服器或網路的行為。</li> 
+								<li class="round">禁止利用本網站提供之各項服務傳送或發表具威脅性、猥褻性、攻擊性、毀謗性的文字、圖片或任何形式的檔案。</li> 
+								<li class="round">禁止傳輸侵犯現行法律、國際相關法律的資料。</li>
+							</ul> 
+						</li> 
+						<li class="num">智慧財產權<br> 
+						本網站上的所有內容，包括著作、圖片、檔案、資訊、資料、網站架構、網站畫面的安排、網頁設計、軟體、影音，均由BAO依法擁有其智慧財產權，包括商標權、專利權、著作權、營業秘密與專有技術等。除進 Woo Tokei 明示同意，任何人不得逕自使用、修改、重製、公開播送、改作、散布、發行、公開發表、進行還原工程、解編或反向組譯。若您欲引用或轉載前述網站內容，必須依法取得 Woo Tokei事前書面同意。如有違反，您應依相關法律對 Woo Tokei 負損害賠償責任。 您若因個人及非商業之使用，得列印並使用本網站內容，惟該列印成品應保留所有版權、商標與專利來源資訊。任何人非經進發食品之事前書面同意，不得將本網站內容以任何理由，用之於其他網址或電腦網際環境中，或轉登或轉發本網站內容。</li> 
+						<li class="num">鏈結<br> 本網站可能會有與第三方網站和資源的鏈結（合稱為「被鏈結網站」）。提供這些被鏈結的網站，僅為您的方便而已，並不表示 Woo Tokei認可這些被鏈結網站的內容。Woo Tokei 對任何被鏈結網站的任何內容、軟體、服務或應用之正確性、準確性、性能或質量，不作任何聲明或保證。此外，使用被鏈結網站，應遵守任何適用的政策、條款及細則，包括但不限於被鏈結網站的保密政策。</li> 
+						<li class="num">網路犯罪之處理<br> 
+						請勿於本網站冒用他人名義（信用卡號）進行交易、散佈電腦病毒、侵入電腦系統或干擾其運作、誹謗他人名譽或侵害他人智慧財產權等行為。上述皆屬犯罪行為，一經發現 Woo Tokei 會將立即申報相關單位協助處理，並全力配合犯罪之偵查。若您發現有網友利用本網站提供的服務從事前述犯罪行為，請您儘速通知 Woo Tokei 處理，以維護本網站之網路秩序。</li> 
+						<li class="num">終止<br> 您同意 Woo Tokei 可自行決定在任何時間，以不符合本網站之規定的理由，終止或中止您使用本網站、系統、資訊、服務和內容。在中止或終止時，您必須立刻：（a）停止使用本網站；（b）銷毀任何已複製的內容。在此類「終止」或「中止」後，進入本網站、系統、資訊、服務和內容的行為，將構成法律上的侵權行為。</li> 
+						<li class="num">準據法與管轄法院<br> 本使用條款之解釋與適用，以及與本使用條款有關的爭議，均應依照中華民國法律予以處理，並排除國際私法之適用。因本使用條款或使用本網站而引發任何求償或訴訟，您同意地方法院有專屬管轄權。</li> 
+						<li class="num">一般條款<br> 您不得將本使用條款或任何本使用條款賦予您的權益或義務轉讓給他人。如本使用條款的任何規定在適當司法管轄權的法院被判定無效，該無效的規定不應影響該條款以外的其他規定之效力，其他規定仍應具有完全的執行力和效力。任何對使用條款的放棄，不得被視為對此條款或任何其他條款持續或永久之放棄。</li> 
+					</ul>
+				</div>
+			</div>
+		</div>		
+	</div>
+	<h5>Copyright © 2017 Woo Tokei. All Rights Reserved</h5>
+
+
+
+	<!-- 登入內文開始 -->
+	<input class="singinbox-state" id="singinbox-1" type="checkbox" />
+	<div class="singinbox">
+ 		 <label class="singinbox__bg" for="singinbox-1"></label>
+  		<div class="singinbox__inner">
+
+    		<div class="box1">
+				<label class="singinbox__close" for="singinbox-1">
+					<i class="fa fa-times"></i>
+				</label>
+				<div class="box2_SIGNIN">
+
+		     	<div class="text">
+		            <h2>SIGN IN </h2>
+		            <h4>會員登入</h4>
+		           
+		          	<h3>Registered Customers</h3>
+		            <br>
+		            <p class="signin_content_EN">If you are the member of WoW Tokei already, please log in to track your orders, view personal account and more.</p>
+		            <p class="signin_content_CN">如果您已經成為會員，那麼只要登入即可快速查看訂單、修改個人帳戶及使用更多功能。</p>
+		     	</div>
+                <form class="signintext" action="" method="post" id="myform2">
+		    	    <div> Email Address / 電子信箱</div>
+				    <div><input name="memEmail" type="text" id="mEmail1" class="textfield"></div>
+
+				    <div> Password / 會員密碼</div>
+				    <div><input name="memPwd" type="password" id="mPwd1" class="textfield"></div>
+
+					<div class="button_box">
+                        <div id="signInError">
+	                        <i class="fa fa-times-circle"></i>
+	                        <span></span>
+                        </div>
+                        <input type="submit" name="button" id="login-btn" value="SIGN IN">
+                    </div>
+				     	
+		        </form>
+			</div>
+
+
+
+     		<div class="solid_1px"></div>
+
+			<div class="box3_CREATE">
+				<div class="account_text">
+					<h2> CREATE AN ACCOUNT </h2>
+		            <div class="title1-1">  會員註冊</div>
+<!--		            <div class="account_content_CN">如果您是第一次來請先加入會員喔！</div>-->
+                    <form class="account_text_content" action="" name="form1" id="myform1" method="post">
+
+                    	<div> Name / 名稱 
+                     		<span class="input_error" id="nameError">
+                     	 	<i class="fa fa-times-circle"></i>
+                     	 	<span></span>
+                     	 </span>
+						</div>
+                          <div><input name="memName" type="text" id="mName" class="textfield3"></div>
+
+			            <div> Email / 電子信箱 
+				            <span class="input_error" id="emailError">
+					            <i class="fa fa-times-circle"></i>
+					            <span></span>
+				            </span>
+			            </div>
+					    <div><input name="memEmail" type="text" id="mEmail" class="textfield3"></div>
+	
+					    <div> Password / 密碼
+						    <span class="input_error" id="pwdError">
+							    <i class="fa fa-times-circle"></i>
+							    <span></span>
+						    </span>
+					    </div>
+					    <div><input name="memPwd" type="password" id="mPwd" class="textfield3"></div>
+	
+					    <div> Confirm / 密碼確認
+					    	<span class="input_error" id="pwd2Error">
+							    <i class="fa fa-times-circle"></i>
+							    <span></span>
+						    </span>
+					    </div>
+					    <div><input name="memPwd2" type="password" id="mPwd2" class="textfield3"></div>
+	
+					    <div> Birthday /  生日
+					    	<span class="input_error" id="bdayError">
+							    <i class="fa fa-times-circle"></i>
+							    <span></span>
+						    </span>
+					    </div>
+					    <div><input type="text" name="memBday" id="mBday" class="textfield3"></div>
+	
+					    <div> Cell Phone / 手機
+					    	<span class="input_error" id="phoneError">
+							    <i class="fa fa-times-circle"></i>
+							    <span></span>
+						    </span>
+					    </div>
+					    <div><input name="memPhone" type="text" id="mCellphone" class="textfield3"></div>
+						
+					    <div class="checkbox">
+					    	<input name="memSub" type="hidden">
+					    	<input name="memSub" type="checkbox" checked="checked" value="1">
+	                              <span> 訂閱電子報，接收最新訊息！</span>
+	                          </div>
+	
+						<div class="button_box" id="register_btn"><input type="submit" name="button" class="button_account" value="加入會員"></div>
+
+            		</form>
+		    	</div>
+			</div>
+		</div>
+	  </div>
+	</div><!-- footer結束 -->
+
+<script src="js/jquery-1.11.2.min.js"></script>
+<script>
+	$(function(){
+	$(".block_bg").fadeOut(1200);
+	$("#example-one li").eq(0).addClass("current_page_item");
+
+	
+});
+
+</script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/index.js"></script>
+<script src="js/example.js"></script>
+<script src="js/header.js"></script>
+<script src="js/login.js"></script>
+<script src="js/header_login_bag.js"></script>
+<script src="js/jquery.cycle2.js"></script>
+
+
+</body>
+</html>
