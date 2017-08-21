@@ -1,0 +1,200 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style:none;
+	font-family: Microsoft JhengHei, Arial;
+	letter-spacing: 0px;
+}
+.footer {
+	width: 100%;
+	height: 400px;
+	background-color: #333;
+	position: fixed;
+	right:0;
+	bottom: -338px;
+	transition: 1s;
+	z-index: 150;
+}
+.showFooter {
+	bottom: -10px;
+	transition: 1s;
+}
+.panel {
+	width: 1000px;
+	height: 360px;
+	margin: 0 auto;
+	
+}
+.panel .tab { 
+	width: 1000px;
+}
+.panel .tab li {
+	width: 245px;
+	margin-right: -4px;
+	background-color: #333;
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	position: relative;
+	text-align: center;
+	cursor: pointer;
+	transition: .3s;
+	font-size: 10px;
+	color: #eee;
+}
+.panel .tab li:hover .english {
+	display: none;
+}
+.panel .tab li:hover .chinese{
+	display: block;
+	color: #f5d020;
+}
+.panel .tab li .english.active {
+	color: #f5d020;
+	height: 40px;
+	background-color: #333;
+}
+.panel .tabContent {
+	width: 870px;
+	height: 300px;
+	background-color: #333;
+	padding: 10px 40px;
+	position: relative;
+	border-top: 1px solid #666;
+	border-bottom: 1px solid #666;
+	font-size: 10pt;
+	line-height: 18pt;
+}
+.panel .tabContent > div {
+	position: absolute;
+	display: none;
+}
+.panel .tabContent .show {
+	display: block;
+}
+.num {
+	list-style: decimal;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+.round {
+	list-style: disc;
+	margin-left: 20px;
+}
+.round2 {
+	margin-left: 20px;
+	list-style: disc;
+	margin-top: 10px;
+}
+h5 {
+	position:fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	text-align: center;
+	color: #999;
+	font-size: 8px;
+	background-color: #333;
+	height: 8px;
+	padding-bottom: 12px;
+	z-index: 160;
+	padding-top: 8px;
+}
+/*.content1 {
+	padding: 20px;
+}*/
+.content1, .content2, .content3, .content4 {
+	margin-left: 30px;
+	float: left;
+	height: 260px;
+	width: 850px;
+	/*background: #333;*/
+	overflow-x:hidden;
+	overflow-y: auto;
+	margin-bottom: 25px;
+	color: #eee;
+	margin: 20px 15px 20px 0;
+	padding-right: 20px;
+}
+#style-3::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #333;
+}
+
+#style-3::-webkit-scrollbar {
+	width: 6px;
+	background-color: #333;
+}
+
+#style-3::-webkit-scrollbar-thumb {
+	height: 30px;
+	background-color: #666;
+	border-radius:2px;
+}
+.aboveFooter {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0);
+	z-index: 140;
+	top: 0;
+	left: 0;
+}
+.chinese {
+	display: none;
+}
+h4 {
+	font-size: 11pt;
+	line-height: 15pt;
+	margin-top: 20px;
+	color: #ccc;
+}
+h4:first-child {
+	margin-top: 0;
+}
+.pp {
+	font-size: 10pt;
+	margin-top: 10px;
+	margin-bottom: 0;
+	line-height: 16pt;
+}
+
+/*.English_btn{
+	width: 70px;
+	height:15px;
+	background-color: rgba(255,255,255,1);
+	position: absolute;
+	top:0px;
+	border-radius: 5px;
+	line-height: 15px;
+	text-align: center;
+}
+.English_btn a{
+	text-decoration: none;
+	font-family: Arial,"微軟正黑體";
+	font-size: 12px;
+	color:#333;
+	line-height: 12px;
+	text-align: center;
+}
+.Chinese_btn{
+	width: 70px;
+	height:15px;
+	background-color: rgba(255,255,255,1);
+	position: absolute;
+	top:0px;
+	left:80px;
+	border-radius: 5px;
+	line-height: 15px;
+	text-align: center;
+}
+.Chinese_btn a{
+	text-decoration: none;
+	font-family: Arial,"微軟正黑體";
+	font-size: 12px;
+	color:#333;
+	line-height: 12px;
+	text-align: center;
+}*/

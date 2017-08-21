@@ -1,0 +1,411 @@
+
+*{
+  letter-spacing: 0px;
+
+}
+
+
+.singinbox {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: -15px;
+  text-align: left;
+  background: rgba(0,0,0, .5);
+  transition: opacity .25s ease;
+  z-index: 999;
+}
+
+.singinbox__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+}
+.editbox-state {
+  display: none;
+}
+
+.editbox-state:checked + .singinbox {
+  opacity: 1;
+  visibility: visible;
+}
+
+.editbox-state:checked + .singinbox .singinbox__inner {
+  top: 0;
+}
+.singinbox-state {
+  display: none;
+}
+
+.singinbox-state:checked + .singinbox {
+  opacity: 1;
+  visibility: visible;
+}
+
+.singinbox-state:checked + .singinbox .singinbox__inner {
+  top: 0;
+}
+
+.singinbox__inner {
+  transition: top .25s ease;
+  position: absolute;
+  top: -20%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  margin: auto;
+  overflow: auto;
+  background: #fff;
+  padding: 1em 2em;
+  height: 50%;
+  border:1px #666 solid;
+}
+
+.singinbox__close i {
+  position: absolute;
+  right: 1em;
+  top: .8em;
+  font-size: 25px;
+  cursor: pointer;
+  color:#aaa;
+  transition: .3s;
+  
+}
+.singinbox__close i:hover{
+  color:#333;
+  transition: .3s;
+}
+
+/*.singinbox__close:after,
+.singinbox__close:before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 1.5em;
+  background: #666;
+  display: block;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  left: 50%;
+  margin: -3px 0 0 -1px;
+  top: 0;
+}
+
+.singinbox__close:hover:after,
+.singinbox__close:hover:before {
+  background: #666;
+}
+
+.singinbox__close:before {
+  transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+*/
+.singinbox__inner {
+    width: 800px;
+    height: 520px;
+    box-sizing: border-box;
+    overflow:hidden;
+  }
+
+
+
+
+
+	*{
+		margin: 0;
+		padding:0;
+		font-family: "Arial","微軟正黑體";
+		border:none;
+
+	}
+
+
+	.box1{  
+		display:block;
+		position:absolute;
+		left:0px;
+		right:0;
+		top:0;
+		bottom:0;
+		margin:auto;
+		width: 800px;
+		height: 520px;
+		background-color:#fff;
+
+
+	}
+	
+/*登入欄位---------開始-----*/
+	.box2_SIGNIN{
+		
+		float:left;
+		width: 270px;
+		height: 400px;
+		margin: 0 50px 0 80px;
+		/*background-color:#aaa;*/
+	}
+
+	.text{
+		margin-top: 60px;
+
+	}
+	.text h2{
+		margin-top: 60px;
+		font-size: 24px;
+		font-weight: bold;
+	}
+	.text h3{
+		position: relative;
+		top:25px;
+		font-size: 18px;
+		font-weight: bold;
+
+	}
+
+	.text h4{
+		margin-top: 5px;
+		font-size: 16px;
+		color: #333;
+		font-weight: bold;
+	}
+
+	.signin_content_EN{
+		position: relative;
+		top:30px;
+		line-height:1.3em;
+		font-size:14px;
+
+
+	}
+	.signin_content_CN{
+		margin: 38px 0 30px 0;
+		line-height:1.3em;
+		font-size:12px;
+	}
+
+	.signintext{
+		position:absolute;
+		width: 260px;
+		height: 150px;
+		font-size:14px;
+		top:290px;
+		margin-top: 20px;
+		/*background-color:#caa;*/
+		/*margin:5px 0;*/
+		/*float:left;*/
+	}
+
+
+	.textfield{
+		padding:0 0 0 5px;
+		margin:4px 0;
+		width: 250px;
+		height:20px;
+		background-color:#666;
+		color:#fff;
+		border:1px #999 solid;
+	}
+
+
+	#login-btn{
+	    margin:15px 0 5px 0;
+		width: 100px;
+		height:25px;
+		background-color:#111;
+		color:#fff;
+		line-height:20px;
+
+		-webkit-transition: 0.5s;
+		-o-transition: 0.5s;
+		transition: 0.5s;
+	}
+
+
+	.button_account{
+		margin: 0px -5px;
+		width: 260px;
+		height:25px;
+		background-color:#111;
+		color:#fff;
+		line-height:20px;
+
+		-webkit-transition: 0.5s;
+		-o-transition: 0.5s;
+		transition: 0.5s;
+	}
+
+	.button_account:hover{
+		-webkit-transition: 0.1s;
+		-o-transition: 0.1s;
+		transition: 0.1s;
+		color:#f5d020;
+		cursor: pointer;
+	}
+
+
+
+	.button_box{
+		margin: 0px 5px;
+		text-align:right;
+	}
+
+	#login-btn:hover{
+		-webkit-transition: 0.1s;
+		-o-transition: 0.1s;
+		transition: 0.1s;
+		color:#f5d020;
+		cursor: pointer;
+	}
+
+	#login-btn:active{
+		border:none;
+
+	}
+
+/*註冊欄位---------結束-----*/
+
+
+
+
+/*分隔線----------------------*/
+
+.solid_1px{		position:absolute;
+				top:40px;
+				left:385px;
+				margin:0 auto;
+				text-align: center;
+			    background-color:#333;
+				width: 1px;
+				height: 420px;
+			}
+
+/*註冊欄位---------開始-----*/
+
+	.box3_CREATE{
+		margin:0 0 0 30px;
+		float:left;
+		width: 310px;
+		height: 400px;	
+	}
+
+
+	.account_text{
+		
+		float:left;
+		width: 260px;
+		height: 400px;
+		margin:0 20px;
+		/*background-color:#aaa;*/
+
+	}
+
+	.account_text h2{
+		margin-top: 60px;
+		font-size: 22px;
+		font-weight: bold;
+	}
+
+	.account_text .title1-1{
+		font-size: 16px;
+		margin-top: 8px;
+		color: #333;
+		font-weight: bold;
+	}
+
+	.account_content_CN{
+		color:#f5d020;
+		position: relative;
+		top:10px;
+		line-height:1.8em;
+		font-size:14px;
+		
+	}
+
+
+
+.account_text_content{
+			position: relative;
+			top:20px;
+			font-size:14px;
+			}
+
+.textfield3{
+
+			padding:0 0 0px 5px;
+			margin:4px 0;
+			width: 255px;
+			height:20px;
+			box-shadow:0px 0px 1px #666;
+			background-color:#fff;
+			color:#111;
+			}
+
+
+
+.thinner{
+	width:470px !important;
+}
+.box1 .btnClose{
+	    position: absolute;
+	    margin-left:770px;
+	    cursor: pointer;
+		width: 30px;
+		height: 30px;
+		display:block;				
+		/*background-color:#000;*/
+		color:#F00;
+		text-indent: -1000em;
+}
+
+.box1 .btnClose:after{
+		content:'x';
+		font-size:22px;
+		width: 30px;
+		height: 30px;
+		display:block;
+		position: absolute;
+		top:0px;
+		right: 0px;
+		color:#666;
+		text-indent: 0;
+		text-align: center;
+	}
+
+.checkbox {
+
+	margin:8px 0 15px 0 ;
+	font-size:10px;
+}
+
+.signin_btn:hover{
+	color:#f5d020;
+	cursor: pointer;
+}
+.input_error{
+	color: 	#AE0000; 
+	float: right;
+	display:none;
+}
+#signInError{
+	
+	color: 	#AE0000; 
+	float: left; 
+	margin-top: 20px; 
+	display: none;
+}
+.editbox-state + .singinbox .button_box{
+	margin-top:30px;
+}
+.editbox-state + .singinbox .box3_CREATE{
+	margin-left:83px;
+}
